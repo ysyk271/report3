@@ -34,7 +34,6 @@ public class Hero extends LivingThing{
      */
     public Hero (String name, int maximumHP, int attack) {
         super(name, maximumHP, attack);
-        System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
     // public void setHero(String _name, int _hitpoint, int _attack, boolean _dead){
@@ -63,7 +62,6 @@ public class Hero extends LivingThing{
     @Override
     public void wounded(int damage){
         super.wounded(damage);
-            System.out.printf("%sは倒れた。\n", getName());
         
     }
 }
